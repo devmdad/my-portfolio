@@ -13,7 +13,7 @@ function ContactWithCaptcha() {
     from_name: "",
     email: "",
     message: "",
-    reply_to: input.email,
+    reply_to: '',
   });
   const [captcha, setCaptcha] = useState(null);
   const [error, setError] = useState({
