@@ -10,7 +10,7 @@ import { toast } from 'react-toastify';
 
 function ContactWithCaptcha() {
   const [input, setInput] = useState({
-    name: '',
+    from_name: '',
     email: '',
     message: '',
   });
@@ -21,7 +21,7 @@ function ContactWithCaptcha() {
   });
 
   const checkRequired = () => {
-    if (input.email && input.message && input.name) {
+    if (input.email && input.message && input.from_name) {
       setError({ ...error, required: false });
     }
   };
@@ -33,7 +33,7 @@ function ContactWithCaptcha() {
       return;
     };
 
-    if (!input.email || !input.message || !input.name) {
+    if (!input.email || !input.message || !input.from_name) {
       setError({ ...error, required: true });
       return;
     } else if (error.email) {
@@ -53,7 +53,7 @@ function ContactWithCaptcha() {
       if (res.status === 200 || teleRes.status === 200) {
         toast.success('Message sent successfully!');
         setInput({
-          name: '',
+          from_name: '',
           email: '',
           message: '',
         });
@@ -81,9 +81,9 @@ function ContactWithCaptcha() {
               type="text"
               maxLength="100"
               required={true}
-              onChange={(e) => setInput({ ...input, name: e.target.value })}
+              onChange={(e) => setInput({ ...input, from_name: e.target.value })}
               onBlur={checkRequired}
-              value={input.name}
+              value={input.from_name}
             />
           </div>
 

@@ -9,7 +9,7 @@ import { toast } from 'react-toastify';
 function ContactWithoutCaptcha() {
   const [error, setError] = useState({ email: false, required: false });
   const [userInput, setUserInput] = useState({
-    name: '',
+    from_name: '',
     email: '',
     message: '',
   });
@@ -42,7 +42,7 @@ function ContactWithoutCaptcha() {
       if (res.status === 200 || teleRes.status === 200) {
         toast.success('Message sent successfully!');
         setUserInput({
-          name: '',
+          from_name: '',
           email: '',
           message: '',
         });
@@ -69,7 +69,7 @@ function ContactWithoutCaptcha() {
               type="text"
               maxLength="100"
               required={true}
-              onChange={(e) => setUserInput({ ...userInput, name: e.target.value })}
+              onChange={(e) => setUserInput({ ...userInput, from_name: e.target.value })}
               onBlur={checkRequired}
               value={userInput.name}
             />
