@@ -3,7 +3,7 @@ export const personalData = {
   profile: "/profile.jpg",
   designation: "Software Engineer",
   description:
-    "My name is Muhammad Ahmed. I am a professional and enthusiastic software engineer. I am a quick learner with a self-learning attitude. I love to learn and explore new technologies and I'm passionate about problem-solving. I love almost all the stacks of web application development and love to make the web more open to the world. My core skill is based on JavaScript and I love to do most of the things using JavaScript. I am available for any kind of job opportunity that suits my skills and interests.",
+    "My name is Muhammad Ahmed. I am a passionate and professional software engineer with a strong enthusiasm for learning and problem-solving. With a quick learning ability and a self-motivated attitude, I continuously explore new technologies and embrace all aspects of web application development. My core expertise lies in JavaScript, and I enjoy leveraging its power to create dynamic and open web solutions. I am eager to take on job opportunities that align with my skills and interests.",
   email: "devmdad@gmail.com",
   phone: "+923167883018",
   address: "Sialkot, Pakistan - 51310 ",
