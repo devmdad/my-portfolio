@@ -13,7 +13,6 @@ function ContactWithCaptcha() {
     from_name: "",
     email: "",
     message: "",
-    reply_to: '',
   });
   const [captcha, setCaptcha] = useState(null);
   const [error, setError] = useState({
@@ -48,7 +47,7 @@ function ContactWithCaptcha() {
     const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
     const options = { publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY };
 
-    setInput({ ...input, reply_to: input.email });
+    // setInput({ ...input, reply_to: input.email });
 
     try {
       setLoading(true);
@@ -65,7 +64,6 @@ function ContactWithCaptcha() {
           from_name: "",
           email: "",
           message: "",
-          reply_to: "",
         });
         setCaptcha(null);
       }
