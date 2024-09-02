@@ -2,27 +2,27 @@
 export const experiences = [
   {
     id: 1,
-    title: "FullStack Developer (Remote)",
-    company: "BizzSole",
-    duration: "(June 2024 - Present)",
+    title: "Software Engineer (on-site)",
+    company: "Patronecs",
+    duration: "(Aug 2024 - Present)",
   },
   {
     id: 2,
-    title: "FullStack Developer",
-    company: "ARK Web Solutions",
-    duration: "(Oct 2022 - Jan 2023)",
+    title: "MERN Stack Developer (on-site)",
+    company: "Fabulous Technology Solutions",
+    duration: "(March 2024 - Aug 2024)",
   },
   {
     id: 3,
-    title: "Web Developer (Contract)",
+    title: "Frontend Developer (remote)",
     company: "Nerds 2 You",
-    duration: "(Nov 2021 - June 2022)",
+    duration: "(May 2022 - Nov 2022)",
   },
   {
     id: 4,
-    title: "Web Developer (Contract)",
-    company: "Forever Young Radio",
-    duration: "(June 2023 - July 2023)",
+    title: "Web Developer (on-site)",
+    company: "ARK Web Solutions",
+    duration: "(Oct 2021 - Dec 2021)",
   },
 
   {
